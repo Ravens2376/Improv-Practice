@@ -1,4 +1,4 @@
-const API = process.env.REACT_APP_API_URL || 'http://localhost:8002';
+const API = process.env.REACT_APP_API_URL || 'https://improv-practice.onrender.com';
 
 export async function getPrompt(drillType, context = '') {
   const params = context ? `?context=${encodeURIComponent(context)}` : '';
